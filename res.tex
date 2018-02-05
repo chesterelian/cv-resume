@@ -257,7 +257,7 @@
 }
 
 \newcommand{\sect}[2]{ % #1 = icon, #2 = text
-  \vspace{.75em}
+  %\vspace{.5em}
   \begin{tikzpicture}
     [fill=\iconcolor, scale=.024, baseline=-1.25em] % geometry settings
     \path[fill=none] (0,0) rectangle (24,24); % bounding box, for debugging
@@ -265,7 +265,7 @@
   \end{tikzpicture}
   \hspace{.125em}
   \textbf{\textsc{\sectsize \MakeUppercase{#2}}}
-  \vspace{.75em}
+  \vspace{.5em}
 %
   %{\color{hl}
     %\vspace{-1em}
@@ -311,7 +311,7 @@
 }
 
 % -------------------------------------------------------------- layout settings
-\def\colheight{58.6em}%{60.3em}
+\def\colheight{58.0em}%{60.3em}
 \def\leftcolwidth{.375\textwidth}
 \def\rightcolwidth{.585\textwidth}
 
@@ -366,8 +366,10 @@
     {chesterelian@gmail.com}
   }
   %\hfill
-  %\contactInfo{\iconGlobe}
-    %{\href{https://github.com/chesterelian}{chesterlian.com}}
+  %\contactInfo{\iconGlobe}{\href
+    %{http://www.chesterlian.com}
+    %{chesterlian.com}
+  %}
   \hfill
   \contactInfo{\iconGithub}{\href
     {https://github.com/chesterelian}
@@ -388,12 +390,11 @@
 {\color{hl}
   \vspace{-.5em}
   \rule{\textwidth}{1.25pt}
-  \vspace{-2em}
+  \vspace{0em}
 }
 
 % ------------------------------------------------------------------ left column
 %
-%\setlength{\fboxsep}{0pt}
 \debugbox{
 \begin{minipage}[t][\colheight]{\leftcolwidth}
 \setlength{\parskip}{.25em}
@@ -425,6 +426,8 @@
       \item \textsb{Publication:} On the Decompositions of Complete Graphs into
       Cycles and Stars on the Same Number of Edges (with A. Abueida).
       \emph{Discussiones Mathematicae Graph Theory} 34.1 (2014), 113--125.
+      \item \textsb{Recognition:} Father Thomas Schoen Award for Innovative
+      Programming (2013)
       \item \textsb{Putnam Competition:} 20 (2010), 21 (2011)
     }
 
@@ -490,7 +493,6 @@
 %
 % ----------------------------------------------------------------- right column
 %
-%\setlength{\fboxsep}{0pt}
 \debugbox{
 \begin{minipage}[t][\colheight]{\rightcolwidth}
 \setlength{\parskip}{.25em}
@@ -512,7 +514,7 @@
   \vfill
 
   \thing
-    {360\textdegree{} 3D Rubik's Cube Visualization}
+    {360\textdegree\ 3D Rubik's Cube Visualization}
     {Summer 2015}
     {http://www.chesterlian.com/seenjs/demo.html}
     {chesterlian.com/seenjs/demo.html}
@@ -520,8 +522,9 @@
       \item Implemented a 3D version of VisualCube
       %(\href{http://cube.crider.co.uk/visualcube.php}
       %{\emph{cube.crider.co.uk/visualcube.php}}),
-      (PHP script for generating 2D PNGs of partial cube states) with basic
-      features
+      (popular PHP script for generating 2D PNGs of partial cube states)
+
+      \item Features: Different cube sizes, algorithm definition, stage masks
 
       \item Rendered on HTML5 Canvas using seen.js (3D library)
     }
@@ -558,10 +561,8 @@
     {Ph.D.\ Dissertation}
     {Summer 2017}
     {
-      \item Improved runtime of a search algorithm from several days to less
-      than a minute
-
-      \item more info
+      \item Improved runtime of a search algorithm from several days to under an
+      hour (a few minutes, in many cases) by shrinking search space
     }
 
   \vfill
@@ -571,10 +572,10 @@
     {Spring 2012}
     {
       \item Implemented rudimentary version of Facebook using MySQL, PHP,
-      JavaScript for Database Management Systems class with basic functionality
-      (add/remove friends, wall posts, comments)
+      JavaScript for Database Management Systems II class
 
-      %\item more info
+      \item Basic functionality: Add/remove friends, wall posts,
+      comments
     }
 
   \vfill
