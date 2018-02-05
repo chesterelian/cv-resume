@@ -1,0 +1,244 @@
+\documentclass[10pt]{article}
+
+% ----------------------------------------------------------- essential packages
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{booktabs} % somewhat essential, I guess
+\usepackage{setspace} % for double spacing, etc.
+\usepackage{multicol} % multiple columns
+\usepackage{tabularx} % tabularx
+
+% ------------------------------------------------------------------- font stuff
+%\renewcommand{\rmdefault}{ptm}
+\renewcommand{\rmdefault}{ppl}
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage[T1]{fontenc}
+%\usepackage[lite,zswash,eucal]{mtpro2}
+
+% ----------------------------------------------------------- fancy header stuff
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead[LO,LE]{}
+%\chead{\textbf{Algebra}}
+%\fancyhead[RO,RE]{}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.75em}
+
+% -------------------------------------------------------------- hyperlink stuff
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
+
+% ------------------------------------------------------------------- tikz stuff
+\usepackage{tikz}
+\tikzset{%
+  every picture/.style={thick, >=stealth}%
+}
+\usetikzlibrary{positioning}
+%\usetikzlibrary{decorations.markings}
+
+% ----------------------------------------------------------------------- macros
+\newcommand{\sect}[1]{
+\vspace{.75em}
+\textbf{\textsc{\Large #1}}
+
+\vspace{-1.5em}
+\noindent\rule{\textwidth}{.5pt}
+\vspace{-1.5em}
+}
+\newcommand{\CC}{\mathbf{C}}
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\ZZ}{\mathbf{Z}}
+\newcommand{\NN}{\mathbf{N}}
+\DeclareMathOperator{\id}{id}
+
+% --------------------------------------------------------------- begin document
+\begin{document}
+
+\thispagestyle{empty} % removes page number from first page
+
+\begin{tabularx}{\textwidth}{@{}X >{\centering}X X@{}}
+  \emph{\large Curriculum Vit\ae} &
+  \textbf{\textsc{\huge Chester Lian}} &
+  \hfill\emph{\large September 2017}
+\end{tabularx}
+
+\vspace{-1em}
+\rule{\textwidth}{1pt}
+%\vspace{-1.5em}
+
+\begin{center}
+\begin{tabular}{rl}
+\textbf{Address} &
+Mathematics Department, Duke University, Box 90320, Durham, NC 27708-0320 \\
+\textbf{E-mail} & \href{mailto:chester@math.duke.edu}{\texttt{chester@math.duke.edu}} \\
+\textbf{Website} &
+\href{http://math.duke.edu/\~chester}{\texttt{http://math.duke.edu/\textasciitilde
+chester}} \\
+\textbf{Citizenship} & Malaysia
+\end{tabular}
+\end{center}
+\vspace{-1em}
+
+\sect{Education}
+
+\textbf{Duke University}, Durham, NC \hfill 2013--present \\
+Ph.D.\ candidate in Mathematics \\
+Advisor: Lenhard Ng
+
+\textbf{University of Dayton}, Dayton, OH \hfill 2009--2013 \\
+B.S. (Honors with Distinction) in Mathematics and Computer Science, summa cum
+laude \\
+Honors thesis: An Aronszajn Tree \\
+Minor: Philosophy
+
+\sect{Research interests}
+
+Low-dimensional topology, knot theory, contact topology, symplectic topology
+
+\sect{Publications}
+
+\vspace{-1em}
+\begin{enumerate}
+
+  \item On the Decompositions of Complete Graphs into Cycles and Stars on the
+  Same Number of Edges (with A. Abueida). \emph{Discussiones
+  Mathematicae Graph Theory} 34.1 (2014), 113--125.
+
+\end{enumerate}
+\vspace{-1em}
+
+\sect{Talks}
+
+\setlength{\leftskip}{1em}
+
+\emph{An Aronszajn Tree.} Brother Joseph W.\ Stander Symposium, University of
+Dayton, April 2013.
+
+\emph{Decompositions of Complete Graphs into Cycles and Stars on the Same Number
+of Edges.} Undergraduate Mathematics Day, University of Dayton, November 2011.
+
+\emph{Decompositions of Complete Graphs into Cycles and Stars on the Same Number
+of Edges.} Brother Joseph W.\ Stander Symposium, University of Dayton, April
+2011.
+
+\setlength{\leftskip}{0em}
+
+\vspace{.5em}
+\textbf{\textsc{\large Seminars and Colloquia}}
+\vspace{-.25em}
+
+\setlength{\leftskip}{1em}
+
+\emph{On the Heegaard Floer Homology of Branched Double-covers.} Heegaard Floer
+Homology Summer Seminar, North Carolina State University, August 2017.
+
+\emph{Moser's Trick in Symplectic Geometry and Morse Theory.} Geometry and
+Topology Graduate Seminar, Duke University, November 2016.
+
+\emph{Morse Homology.} Topology Learning Seminar, North Carolina State
+University, September 2016.
+
+\emph{Group Theory in Practice: Solving a Rubik's Cube Blindfolded.} Department
+Colloquium, University of Dayton, December 2011.
+
+\setlength{\leftskip}{0em}
+
+\sect{Conferences}
+
+Georgia International Topology Conference, Georgia Tech, Athens, GA \hfill May
+2017\setlength{\parskip}{.25em}
+
+Triangle Area Graduate Mathematics Conference (TAGMaC), Duke, Durham, NC \hfill
+March 2017
+
+AMS Fall Southeastern Sectional Meeting, NCSU, Raleigh, NC \hfill November 2016
+
+Knots in the Triangle, NCSU, Raleigh, NC \hfill April 2016%
+\setlength{\parskip}{.75em}
+
+\newpage
+\sect{Awards and Honors}
+
+\textbf{Captain L.\ P.\ and Barbara Smith Award for Teaching
+Excellence} \hfill Academic year 2016--2017\setlength{\parskip}{.25em}
+
+\textbf{Captain L.\ P.\ and Barbara Smith Award for Teaching
+Excellence} \hfill Academic year 2015--2016
+
+\textbf{Trustees' Scholarship}, University of Dayton (full-tuition
+scholarship) \hfill 2009--2013
+
+%Highest scholarship awarded by the University of Dayton: four years tuition, two
+%years room and board
+
+\textbf{University Honors Program}, University of Dayton \hfill
+2009--2013
+
+\textbf{Pi Mu Epsilon}, National Mathematics Honorary Society \hfill
+Inducted 2011\setlength{\parskip}{.75em}
+
+\sect{Teaching}
+
+\textbf{\textsc{\large Duke University}}
+
+\setlength{\leftskip}{1em}
+
+\vspace{-.25em}
+\textbf{Instructor of Record}
+\setlength{\parskip}{.25em}
+
+Math 105L, Laboratory Calculus and Functions I \hfill Fall 2014
+
+Math 111L, Laboratory Calculus I \hfill Fall 2015
+
+Math 112L, Laboratory Calculus II \hfill Spring 2016, Spring 2017
+
+Math 771S, Teaching College Mathematics (co-instructor: Emily Braley) \hfill
+Fall 2016\setlength{\parskip}{.75em}
+
+\textbf{Lab Instructor}
+\setlength{\parskip}{.25em}
+
+Math 111L, Laboratory Calculus I \hfill Fall 2013\setlength{\parskip}{.75em}
+
+\setlength{\leftskip}{0em}
+
+\vspace{.5em}
+\textbf{\textsc{\large University of Dayton}}
+
+\setlength{\leftskip}{1em}
+
+\vspace{-.25em}
+\textbf{Supplemental Instruction Leader}
+\setlength{\parskip}{.25em}
+
+MTH 218, Analytic Geometry and Calculus III \hfill Fall 2010\setlength{\parskip}{.75em}
+
+\textbf{Teaching Assistant}
+\setlength{\parskip}{.25em}
+
+MTH 137, Calculus I with Review \hfill Fall 2012
+
+MTH 168, Analytic Geometry and Calculus I \hfill Fall 2011, Spring 2012
+
+MTH 169, Analytic Geometry and Calculus II \hfill Spring
+2011\setlength{\parskip}{.75em}
+
+\textbf{Grader}
+\setlength{\parskip}{.25em}
+
+MTH 310, Linear Algebra and Matrices \hfill Spring 2010\setlength{\parskip}{.75em}
+
+\setlength{\leftskip}{0em}
+
+\sect{Languages}
+
+English (native), Mandarin Chinese (native), Cantonese (native), Malay (native),
+German (limited working proficiency)
+
+\end{document}
