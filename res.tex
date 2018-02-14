@@ -265,13 +265,13 @@
   \end{tikzpicture}
   \hspace{.125em}
   \textbf{\textsc{\sectsize \MakeUppercase{#2}}}
-  \vspace{.5em}
-%
-  %{\color{hl}
-    %\vspace{-1em}
-    %\noindent\rule{\textwidth}{.5pt}
-    %\vspace{-1em}
-  %}
+  %\vspace{.5em}
+
+  {\color{hl}
+    \vspace{-1em}
+    \noindent\rule{\textwidth}{.5pt}
+    \vspace{-1.125em}
+  }
 }
 
 \newcommand{\thing}[5]{%
@@ -311,9 +311,9 @@
 }
 
 % -------------------------------------------------------------- layout settings
-\def\colheight{58.0em}%{60.3em}
+\def\colheight{58.3em}%{60.3em}
 \def\leftcolwidth{.375\textwidth}
-\def\rightcolwidth{.585\textwidth}
+\def\rightcolwidth{.575\textwidth}
 
 \newcommand{\debugbox}[1]{
   \setlength{\fboxsep}{0pt}
@@ -388,9 +388,9 @@
 %
 % -------------------------------------------------------------- horizontal rule
 {\color{hl}
-  \vspace{-.5em}
+  \vspace{-.625em}
   \rule{\textwidth}{1.25pt}
-  \vspace{0em}
+  \vspace{-.125em}
 }
 
 % ------------------------------------------------------------------ left column
@@ -426,9 +426,9 @@
       \item \textsb{Publication:} On the Decompositions of Complete Graphs into
       Cycles and Stars on the Same Number of Edges (with A. Abueida).
       \emph{Discussiones Mathematicae Graph Theory} 34.1 (2014), 113--125.
-      \item \textsb{Recognition:} Father Thomas Schoen Award for Innovative
-      Programming (2013)
       \item \textsb{Putnam Competition:} 20 (2010), 21 (2011)
+      \item \textsb{Awards:} Father Thomas Schoen Award for Innovative
+      Programming (CS, 2013), Faculty Award for Excellence (Math, 2013)
     }
 
   \vfill\vfill
@@ -438,7 +438,7 @@
   %\vspace{.5em}
   %\textsb{Other:} SQL, HTML, CSS, \LaTeX, Mathematica, UNIX/Linux
 
-  JavaScript (Node.js, CoffeeScript, jQuery), C++, Python, Perl, SQL, \LaTeX\
+  JavaScript (CoffeeScript, jQuery), Python, Java, Perl, SQL, \LaTeX\
   (Ti\emph{k}Z), HTML, CSS, Mathematica, UNIX/Linux
 
   \vfill\vfill
@@ -469,6 +469,8 @@
     {
       \item Co-instructed with a full-time professor
 
+      \item First and only graduate student to be given this opportunity
+
       \item Trained first-year graduate students in running and teaching lab
       calculus courses
     }
@@ -481,8 +483,9 @@
     {Various calculus courses}
     {5 semesters}
     {
-      \item \textsb{Recognition:} Smith Award for Teaching Excellence (\$3000
-      cash prize), academic years 2015--2016 and 2016--2017\vphantom{,p)}
+      \item Won Smith Award for Teaching Excellence (\$3000 cash prize) in 2016
+      and 2017
+      \vphantom{,p)}
       % vphantom is for aligning with the bottommost sentence of the right div
     }
 
@@ -507,8 +510,8 @@
     {
       \item Built course website for a calculus class
 
-      \item Developed familiarity with AngularJS components and AngularJS
-      Material (UI component framework)
+      \item Self-initiated project to develop familiarity with AngularJS
+      components and AngularJS Material (UI component framework)
     }
 
   \vfill
@@ -519,12 +522,12 @@
     {http://www.chesterlian.com/seenjs/demo.html}
     {chesterlian.com/seenjs/demo.html}
     {
-      \item Implemented a 3D version of VisualCube
+      \item Implemented a draggable 3D version of VisualCube
       %(\href{http://cube.crider.co.uk/visualcube.php}
       %{\emph{cube.crider.co.uk/visualcube.php}}),
-      (popular PHP script for generating 2D PNGs of partial cube states)
+      (a popular PHP script for generating 2D PNGs of partial Rubik's cube states)
 
-      \item Features: Different cube sizes, algorithm definition, stage masks
+      \item Features: Different cube sizes, algorithm-defined states, stage masks
 
       \item Rendered on HTML5 Canvas using seen.js (3D library)
     }
@@ -538,7 +541,7 @@
     {math.duke.edu/\textasciitilde chester}
     {
       \item Created interactive web apps to illustrate (pre-)calculus concepts
-      to students, e.g., derivatives, phase planes, Euler's method
+      to students, e.g., inverses, derivatives, phase planes, Euler's method
       \item Used jQuery and Flot (JavaScript plotting library)
     }
 
@@ -551,7 +554,9 @@
     {chesterlian.com}
     {
       \item Designed and developed fully keyboard-controlled Rubik's cube timer
-      with common functionalities and minimal visual clutter (inspired by Vim)
+      (inspired by Vim)
+      \item Features: Time log, statistics, manual input, scramble generation
+      for multiple puzzles, minimal visual clutter
     }
 
   \vfill\vfill
@@ -609,7 +614,7 @@
       \item \textsb{Leadership:} (Co-)organized 7 World Cube Association
       competitions
 
-      \item \textsb{Teamwork:} Staff member at 30+ competitions (World
+      \item \textsb{Teamwork:} Staff member at 36 competitions (World
       Championships 2013, US National Championships 2010, 2011, 2012, 2014,
       2015)
     }
